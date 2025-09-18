@@ -1,0 +1,100 @@
+6 Sept 2025
+
+AGENDA
+- How a Web Application works
+- Differentiate URL/URN/URI
+- HTTP Request /Response [Types of Requests]
+- Demo - Servlet - [html request - Servlet]
+--  future [ ReactJS based Request - RESTAPI based response]
+
+WEB SERVERS		APP SERVERS
+weblogic			JBOSS AS
+apache tomcat		Apache Tomcat AS
+IIS
+IBM Websphere		IBMWS_AS
+GlassFis
+			SunAPPSERVER
+------------
+			Load Balancing
+			Server Switching
+			Transaction Mgmt
+			SEcurity
+			Authentication
+			Logging Services
+
+
+http://localhost:8080/Employees/getEmployees
+
+http://www.flipkart.com/Employees/getEmployees
+
+URL /URI /URN
+========XX=====XX
+Web Application works
+ ClientSide Technology
+vs Server Side Technology
+----http - request --- processed by the server----
+--- different types of requests[get /put/post/delete]
+
+-- http1.0 vs http2.0
+-----------------
+	[TODAY]
+[html page ]----[intermediate -encrypted/decrypted]---> Servlet
+-------[NEXT WEEK]
+[reactJS]-------->[RestFulAPI]----[SpringDATA Api] ----[MYSQL]
+
+SERVER SIDE TECH STACK
+SERVLETS --	SPRINGMVC
+
+Servlet is a Server side framework -  CONTROLLER
+JSP      is also a server side framework - VIEW
+
+get request from browser--- service()
+Servlet -     init / service / destroy
+|
+GenericServlet
+|
+HttpServlet
+|
+Servlet
+get--doGet()-------\ service()
+put doPut() -------\
+post doPost()-----\
+delete doDelet()-----\
+
+init 
+
+html 
+---- sending the http request------ [server side page processed generate the response]
+---> response is streamed back to the Browser [document]
+
+
+Browser --- request http://localhost:8080/ProjectName/welcome.html
+----Request---- Server[apache tomcat]----Load Servlet
+Request-HttpRequest request
+
+
+servlet
+request.getParameter()
+response.getWriter()
+PrintWriter stream--------> Document Browser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

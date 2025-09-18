@@ -1,0 +1,257 @@
+Architectural Style
+[3 Tier Architecture/2Tier Arch / N-Tier Architecture--- LAYERED ARCHITECTURE]
+Resource Oriented Architecture
+
+
+
+[Service Oriented Architecture-SOA]		Web Services/MicroServices
+		|
+Object Oriented Architecture	---	Components
+JavaBeans /[RMI / CORBA/EJB Java]
+--------------
+Design Patterns
+-----------------------
+SERVER
+class abstract Customer
+{
+
+	calculateDiscount()
+
+}
+class GoldClassCustomer extends  Customer
+{
+calculateDiscount()
+
+}
+class DiamondClassCustomer extends  Customer
+{
+calculateDiscount()
+
+}
+----
+class Container
+{
+Customer c;
+public static Customer getCustomer()
+{
+
+	String type;
+	switch(type)
+	{
+		case "gold"{
+			c = new GoldClassCustomer();
+		}
+
+	}
+
+
+
+	return c;
+
+}
+}
+}
+--------------
+
+
+Client
+class MyClient
+{
+
+
+
+p s v m()
+{
+MyClient mc = new MyClient();
+Customer c = mc.getCustomer(String type);
+
+
+}
+Gang Of 4 patterns
+21 Design 
+
+Architecture Level[SOA /OOA/ROA/MVC]
+Modelling [] - UML/FLOA CHART/PSEUDOCODE / ERD
+Construction -- GOF 24
+[
+Creational Factory
+Structural
+Behavioural - Observer
+
+]
+
+--- MVC
+
+3 Tier Architecture Style ---->WEB A------ [java- servlets/jsp]
+VS
+MVC
+-----
+Drawbacks
+
+Dependency 
+
+
+-----
+Good Prog standards
+
+-- Loosely Coupled
+-- Highly Cohesive
+----
+servlet
+
+get employees who work in a region
+who has a grade appraisal a-B
+
+|
+increment basic salary 10
+
+average
+
+averag > x
+reduce
+project
+
+Business	UI 	Data Structure Controller
+Service    Views	Model 		
+Bus Logic
+
+
+http://www.xyz.com/products
+http://www.xyz.com/customers
+http://www.xyz.com/employees
+POJO
+
+class Employee
+{
+data model variables/getters/setters/constructor/toString()
+
+}
+class Product
+{
+
+
+}
+class Customer
+{
+
+
+}
+[Mode;ls]]]]]]]
+
+http://www.xyz.com/products	
+http://www.xyz.com/products/delete/eid=e001
+	CustomerController/ProductController]]]]]]]
+http://www.xyz.com/customers
+Views]]]]]]]]
+
+
+@Controller("/Customers")
+class CustomerController
+{
+
+
+}
+
+
+
+@Controller("/Products")
+class ProductsController
+{
+
+@GetRequest("/get")
+List <Product>getProducts()
+{
+List <Employee> myemployees;
+returen  xyz.jsp
+}
+
+@DeleteRequest("/delete")
+
+
+}
+
+
+
+@Controller("/Employees")
+class EmployeesController
+{
+
+
+}
+
+4 PILLAR FEATURES OF MVC
+1) SEGREGATION OF CONCERNS
+2) DEPENDENCY INJECTION
+3) INVERSION OF CONTROL
+4) AOP- ASPECT ORIENTED PROGRAMMING
+
+
+class Employee
+{
+
+Address address;
+
+public Employee()
+{
+Address addr = new Address()
+this.address = addr;
+}
+OR
+public Employee(Address addr)
+{
+
+this.address = addr;
+}
+
+}
+
+ADdress adr
+Employee e = new Employee(adr)
+
+
+
+Employee
+MVC archtecture
+|
+.Net	PHP	Java
+.NetCore		spring mvc
+|
+
+ASP.net mvc	structs/velocity
+
+---------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
