@@ -1,0 +1,324 @@
+6+
+
+1)Differentiate Http 1.0 vs Http 2.0 &  Explain the Advantages of Http2 over Http1 [2 + 2 = 4]
+
+2) Explain the difference between a Monolithic Web Application and a Web Service [2 + 2 +2 = 6]
+Explain atleast 3 scenarios along with the substantiations where a Web Service  can be implemented instead of a Monolithic Web Application
+
+3) Explain the advantages   of MVC architectural style over traditional 3 Tier Architecture[2+2]
+along with  pillar features of MVC
+Also explain How the different layers of MVC application are connected when a request reaches a web application from a Browser.
+
+4) WebRouters & WebSockets [3 + 3 ]
+
+5) You are part of an IT Services Team which is involved in developing software solutions for various Business processes      
+As a new product you are required to cater to the needs of a Product Manufacturing unit dealing with Consumer Products
+As part of which you are asked to create a REST API using MVC architecture style since they need better reusability , flexibility & bettern segregation of responsibilities.
+
+Create REST API with Model,Service,Controller layers invoking Repository Layer functionalities for the following needs
+assuming Repository layer is implemented already using SpringDataJPA
+
+Clients should be able to deal with the "Product" entity
+with the fields ProductId (Auto Generated ), ProductName, ProductDescription,PricePerUnit,UnitInStock
+Use appropriate data types
+
+User should be able to Insert Product Records		1.5 * 4 = 6 + 
+USer should be able to Search Products by Category
+User should be able to Update product Details
+User should be able to Delete product by ID
+
+Create GraphicsQL Schema for above oprations		2
+
+Create Graphics Query				2
+for
+Insert, Update 
+===========================FINAL MID SEM PAPER==========================
+
+Q.1. 	Explain How a Web Application works , Also explain the significance of the following components of  a Web Application.						[2+2+2 = 6 Marks]
+(a)	Client Side Components along with the Technologies used for the same
+(b)	Server Side Components along with the Technologies used for the same
+
+
+Q.2.  Differentiate Http 1.0 vs Http 2.0 &  Explain the Advantages of Http2 over Http1
+ 									[2 + 2 = 4 Marks] 
+
+
+Q.3.  Explain the difference between a Monolithic Web Application and a Web Service 
+Explain atleast 3 scenarios along with the substantiations where a Web Service  can be implemented instead of a Monolithic Web Application					[3 + 3  = 6 Marks]
+
+
+										                           
+Q.4.  Explain the advantages   of MVC architectural style over traditional 3 Tier Architecture
+along with  the pillar features of MVC Also explain How the different layers of MVC application are connected when a request reaches a web application from a Browser.
+										[2 + 2 = 4 Marks]
+
+
+
+Q.5.  You are part of an IT Services Team which is involved in developing software solutions for various Business processes , As a new member of the Team, you are required to cater to the needs of a Product Mangufacturing unit dealing with Consumer Products
+As part of which you are asked to create a REST API using MVC architecture style since they need better reusability , flexibility & bettern segregation of responsibilities.
+
+
+
+
+
+
+
+Create REST API with Model,Service,Controller layers invoking Repository Layer functionalities for the following needs
+assuming Repository layer is implemented already using SpringDataJPA
+
+Clients should be able to deal with the "Product" entity
+with the fields ProductId (Auto Generated ), ProductName, ProductDescription,PricePerUnit,UnitInStock
+Use appropriate data types
+
+User should be able to Insert Product Records			[1.5 * 4 = 6 Marks]
+USer should be able to Search Products by Category
+User should be able to Update product Details
+User should be able to Delete product by ID
+
+Create GraphicsQL Schema for above operations			[2 Marks]
+
+Create Graphics Query						[2 Marks]
+For Insert & Update Operations
+
+
+
+
+
+				---------XXX---------
+
+
+================================ MAKE UP ================================
+
+1) Explain Http Request Components with example Http Response with example 
+
+2) Explain Http Methods
+
+3) Compare and explain the various Techniques
+SSEvents, WebHooks & WebSockets with Example scenarios
+
+4) Explain the advantage of GraphicsQL over the regular endpoints of RESTful services and the importance of 
+Queries , Mutations & Subscriptions
+
+
+
+
+5) In a scenario    Suppliers[10]
+Create REST API Service Layer invoking Repository Layer functionalities for the following needs
+assuming Repository layer is implemented using SpringDataJPA
+
+Insert Records
+Search by City
+Update
+Delete
+
+Graphics Query
+for
+Insert, Update & Delete
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+								ANSWERS:
+Q1
+Explain How a Web Application works , Also explain the significance of the following components of  a Web Application.						[2+2+2 = 6 Marks]
+(a)	Client Side Components along with the Technologies used for the same
+(b)	Server Side Components along with the Technologies used for the same
+
+
+ANSWER:
+Web application once created is hosted in a Hosting server which is part of  the WWW thus it is promoted as a Web Site and is available for the public in the Internet.
+Whenever the end user tries connecting to the Web SIte, the user connects to the site through a Browser.
+When the user enters the URL in the browser , it connects through the Service Provider to a DNS - Domain Naming Service , which is responsible in resolving the 
+Domain name versus the IPAddress of the machine over the Internet which is actually hosting the target web application.
+
+The web application is contained in a Web Server - Application server, like JBoss AS, Apache Tomcat , GlassFish, SunAppServer, Weblogic or IBM Websphere to enable the end users to access the website and to process the requests sent by the endusers.
+
+"Web Application " which is deployed in the container consists of client side components as well as server side components.
+client side components are those elements which will get processed in the clients end and the server side components are those which will get processed on the server side,
+
+for example In a Banking Site, to check the account balance and to provide  some benefits and special interest rates, based on the policies of the Bank , the component has to be executed on the server side, to utilize the resources, business logics and databases.this form the server side component
+
+On the hand , while registering over the site,to check if the  password chosen by the user  has proper strength or to check if it has enough special characters,no. of characters, 
+one has to use the component which could  be processed on the client side, which can be a Client side component. 
+
+Traditionally Presentation Logics were implemented in the Server Tier, but modern day web applications have evolved  towards pushing the Presentation Logics towards 
+Client Tier, to optimize the load on the servers
+
+
+Client Side Technologies : Html / CSS/ Javascript / ReactJS/Angular
+These days there  is more need for the transfer of processing load from servers end to clients end, more of clients side processing is leveraged by the Presentation layer which other wise was at the server side, therefore there is more capability requirement on the client side technologies which are catered by frameworks like React/Angular which extend MVC styled approaches on the front end too providing more sclability , loose coupling, extensibility and more maintainability.
+
+Server Side Technologies : JEE/.Net -Asp.net Core/Servlets /JSP/Spring/NodeJS
+======================================================================================================================================================
+Q2
+Differentiate Http 1.0 vs Http 2.0 &  Explain the Advantages of Http2 over Http1
+									[2 + 2 = 4 Marks] 
+
+Http 2.0 is much advantageous over Http 1.0
+
+Http 1.0 				
+Features
+A connection could be reused, which saved time. It no longer needed to be opened multiple times to display the resources embedded in the single original document.
+Pipelining was added. This allowed a second request to be sent before the answer to the first one was fully transmitted. This lowered the latency of the communication.
+Chunked responses were also supported.
+Additional cache control mechanisms were introduced.
+Content negotiation, including language, encoding, and type, was introduced. A client and a server could now agree on which content to exchange.
+Thanks to the Host header, the ability to host different domains from the same IP address allowed server collocation.
+
+
+Head Of Line Blocking Problem
+(Prev Request has to be fulfilled before processing next Req)
+Requests for Multiplexed Requests
+Not implemented
+Opening of multiple
+TCP connections for requesting multiple resources
+Textual Nature of Data Transfer
+Numerous workarounds
+SLow Web Page Loading speed
+|
+Above leading to
+Slow Com/Slower Web
+
+
+Http.2.0
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Evolution_of_HTTP
+More efficient use of network resources
+reduced perception of latency by introducing header field compression and allowing multiple concurrent exchanges on the same connection
+Specifically it allows interleaving of request and response messages on the same connection and uses an efficient coding for Http header fields
+It also allows prioritization of requests, letting more important requests complete more quickly , further improving performance
+Resulting protocol is more friendly to the network, becuase fewer TCP connections can be used in comparison to Http
+which means less competition with other flows and longer lived connections, which in turn leads to better utilization of available network capacity
+More efficient processing of messages through use of binary message framing
+It is Binary protocol instead of Textual
+eliminating security concerns
+Fully multiplexed
+Used header compression HPACK to reduce overhead size
+Allows servers to push responses proactively into client caches instead of waiting for new request
+Reduces addtl round trips 
+Reduced Network latency and improved throughput
+less prone to errors and lighter network footprint
+
+======================================================================================================================================================
+									[2 + 2 = 4 Marks] 
+Q3
+Explain the difference between a Monolithic Web Application and a Web Service 
+Explain atleast 3 scenarios along with the substantiations where a Web Service  can be implemented instead of a Monolithic Web Application					
+[3 + 3  = 6 Marks]
+
+ANSWER:
+
+Web Services
+In Monolithic Web Applications - Source code is not reusable and Not Interoperable with other Applications, whereas the Web Services are Interoperable with other Applications
+and the Source Code s are reusable across applications.
+
+Web Services are specialized form  of applications which reside on containers and handle the request and respond with a response  in a neutral formats such as JSON or XML
+They manifest Service Oriented ARchitecture style.
+ 
+Service Oriented Architectural style : SOA
+According to the SOA , the Server component should expose the services through the endpoints , Http requests coming from clients end should be sending the requests
+of Http  types Get/Put/Post/Delete, 
+Respective Services available on the corresponding Endpoints should process the requests and send responses in a neutral formats - either XML or JSON. 
+
+Web Services can be implemented in any of the Technologies like: 
+JEE / Spring/SpringBoot
+.Net
+Php
+Python
+NodeJS etc
+
+Whereas Web applications are more of stand alone web apps created using a specific technology  ,which are deployed in a container and will process the requests that come from the clients and once created these web apps are not reusable/ interoperable across the platforms and technologies, in the sense they have to be used by the end users directly and cannot be reused neither  codewise or functionality wise  by other applications irrespective of technology, except through some recreated middle ware
+
+Web Services are taking prominence these days for their interoperability.
+Scalability/Maintenability-Debugging/Extensibility will be easier in Web Services without affecting other services whereas changes and these aspects will affect the entire application, since after changes entire app has to be redeployed.
+Following 3 scenarios explain the advantage of creating a Web Service over monolithic web application.
+
+1) Taking up a scenario, say an Online SHopping SIte where a web application caters to numerous customers in making online purchases, these customers may make payments through cards of different Banks like Hdfc,ICICI,AXIS bank etc, for the card verification, let us assume the shopping app has to communicate to various bank sites  (hdfc,icici * axis) which are created on various technologies possibly like JEE,SPring,.Net,PHP etc, creating modules to interact with all these apps would be very cumbersome instead all of them can communicate through a Web Service like Pay PAL which would be reusable by any technology based application as well as can communicate to any application on any technology .
+
+2)  Assuming a scenario where a web application is used to provide Weather forecasting information, this can be accessible by end users through their brwosers, now if the same organization which developed this site wants to create several other apps say like StarTV.com, CricInfo.com & One SOcial Media SIte and each of these might be created on different technologies, if Weather Forecasting feature has to be incorporated in each application separate modules have to be created with respect to that technology, instead if the WeatherForecasting tool was a WEB SERVICE all these apps can communicate with that easily since Web Services provide absolute interoperability across the technologies
+
+3) Assuming a scenario that different shopping malls use different Billing applications created by different vendors , all these apps need BarCode Reader component, the vendors can create different components for the same on different technologies contrarily, they can use one common web service for the same
+
+Thus Web service provide reusability of the code as well as absolute interoperability.
+======================================================================================================================================================
+Q.4.  Explain the advantages   of MVC architectural style over traditional 3 Tier Architecture
+along with  the pillar features of MVC Also explain How the different layers of MVC application are connected when a request reaches a web application from a Browser.
+															[2 + 2 = 4 Marks]
+
+
+ANSWER:
+MVC Architectural style provides more flexibility for the software design with much more
+Extensibility, Better Debugging features, Scalability , DeCoupling among the entities with more Modularization. 
+
+MVC stands for Model View Controller -
+
+MVC is basically an Architecture Level Design Pattern which is used to solve the problems that were faced in the traditional 3 Tier Architecture.
+There was no deeper DeCoupling and Responsibility Segregation in the traditional 3 Tier Architecture
+For example while Developing a web application using traditional 3 tier architecture one can use Servlets/JSP
+Servlets for Business Logics and JSP for UI, but this framework does not strictly allow one to adhere to segregation of responsibilities,
+In a single Servlet one can use JDBC related code to connect to Database and say fetches n number of Employee records and since servlet also allows one to perform analysis let us assume we do some filtering of employees who stay in some region and who have been graded with a particular grade and need to process these employees records further and they display the results in a html, for this kind of activity , SERVLETS allow all these responsibilities along with UI- part of html , all in one SERVLET which is not a good design, DB connection, Analysis & processing and projecting data in Views,  all these responsibilities can be segregated and be carried out in different components. which might be a better design, since any changes in one component may not affect the others.
+This kind of problems can be sorted in Model View Controller architecture style.
+
+In a Model View Controller style 
+Controller acts as the layer which communicates between View and the Model, 
+Controller can perform Business Logics but more specifically Business Logic responsibility is given to SERVICE layer and the SERVICE layer if in need of data will communicate with Repository layer which actually deals with databases,  Repository layer may use Hibernate/SpringData JPA or any other ORM tool to communicate with RDBMS
+
+MVC style basically exhibits 4 pillar features like through Frameworks like SpringMVC
+1) Segregation of Concerns
+2) Dependency Injection
+3) Inversion OF Control
+4) AOP - Aspect Oriented Programming
+
+Segregation of Concerns deals with the responsibilities separated by the layers Controllers which act as mediator between Model and View and the Service layer which takes care of the Business Logic and Process layer and Repository layer taking care of DB connectivity and Views focussing only on UI
+
+Dependency Injection takes care of dynamically loading the Objects and dependent Objects in a decoupled manner which ensures Factory pattern implementation without giving the Object creation logic to the the client modules, 
+
+IOC container is responsible for the implementation of DEp Injection since the container takes the responsibility for instance in Spring framework, to load the necessary objects dynamically whenever required
+Inversion Of Control is named so since earlier, OBJECT creation responsibility was with the developers but the same is given to the Container
+
+Also Aspect Oriented programming gives next level of modularization , by allowing one to create "aspects" which might be tasks related to Security, Logging , Exception handling, Application monitoring etc in a modularized manner which can be assigned and invoked in a  centrallized manner
+
+The flow of MVC based application works as follows:
+
+Initially The Request reaches the FrontController which is basically a Servlet which then uses the Handler Mapping to map the request based on the URL, with the respective Controller which would be generally a class level mapping and then the control is passed to the Method level Mapping, which in turn  invokes the functionality of the SERVICE, which is responsible for the Business logics, SERVICE layer in turn invokes the REPOSITORY layer for any Database needs, which transfers the data to SERVICE which in turn transfers the data to Controller, controler then maps the data through Model/ModelAndView or ModelMap and uses View Resolver to load the respective View which is again rendered through the Front Controller to the Browser, then again based on the RequestMapping according to the choice of the end user, the cycle continues through the FrontController and then through HandlerMapping reaches the controller and so on.
+
+The UI can be developed using any Template engines like JSP / Thymeleaf/JSF etc
+The same MVC style when incorporated in a WebService, the front end frameworks can be chosen according to the need, which can be Angular or ReactJS.
+
+==============================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
